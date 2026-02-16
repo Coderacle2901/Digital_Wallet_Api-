@@ -82,4 +82,12 @@ public class UserServiceImpl implements UserService {
         return mapDto.map(existingUser,UserResponseDTO.class);
 
     }
+
+    @Override
+    public void deleteById(Long id) {
+        User matchingUser = userRepository.findById(id).orElseThrow(()-> new ResourceNotFoundException("User with user_id: " + id + " does not exist "));
+        userRepository.delete(matchingUser);
+    }
+
+
 }
