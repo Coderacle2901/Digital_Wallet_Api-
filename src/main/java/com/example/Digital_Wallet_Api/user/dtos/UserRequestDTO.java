@@ -8,10 +8,10 @@ import lombok.Data;
 @Data
 public class UserRequestDTO {
 
-    @NotBlank(message = "FirstName cannot be empty")
+    @NotBlank(message = "FirstName field cannot be empty")
     private String firstName;
 
-    @NotBlank(message = "LastName cannot be empty")
+    @NotBlank(message = "LastName field cannot be empty")
     private String lastName;
 
     @NotBlank(message = "email is required")

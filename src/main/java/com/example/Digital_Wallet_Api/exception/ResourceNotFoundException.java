@@ -1,0 +1,14 @@
+package com.example.Digital_Wallet_Api.exception;
+
+public class ResourceNotFoundException extends  RuntimeException{
+    public ResourceNotFoundException() {
+    }
+
+    public ResourceNotFoundException(String message) {
+        super(message);
+    }
+
+    public ResourceNotFoundException(String message, Throwable cause) {
+        super(message, cause);
+    }
+}
