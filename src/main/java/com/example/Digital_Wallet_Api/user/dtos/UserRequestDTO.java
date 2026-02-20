@@ -17,7 +17,6 @@ public class UserRequestDTO {
     @NotBlank(message = "email is required")
     @Email(message = "Please enter a valid email address, example: example@gmail.com")
     private String email;
-
     @NotBlank(message = "password is required")
    @Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).{8,}$",
            message = "Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character")
